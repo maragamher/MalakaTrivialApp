@@ -35,13 +35,16 @@ public class ConocenosActivity extends AppCompatActivity {
             return insets;
         });
 
+        //Array tipo String que guarda el nombre y la descripción de cado uno de nosotros 
         String[] pablo = {"PABLO DEL PINO PAULANO","Desde Jaén tenemos a Pablo, un desarrollador que se encuentra en pleno aprendizaje."};
-        String[] mara = {"MARA GAMBERO","Recién salida de la cantera malagueña tenmos a una auténtica lider la cual puede con todo."};
+        String[] mara = {"MARA GAMBERO","Recién salida de la cantera malagueña tenemos a una auténtica lider la cual puede con todo."};
         String[] alvaro = {"ÁLVARO MILLÁN","Chaval muy joven que siempre está trabajando y avanzando en su desarrollo profesional."};
         String[] daniel = {"DANIEL SÁNCHEZ","Aquí nos encontramos con la veterania del grupo (que no viejo), aporta una experiencia muy valiosa."};
         String[] sergio = {"SERGIO SORIANO",""};
 
+        //Creo el ArrayList
         nosotros = new ArrayList<>();
+        //Agrego nuestra información al ArrayList
         nosotros.add(pablo);
         nosotros.add(mara);
         nosotros.add(alvaro);
@@ -56,6 +59,8 @@ public class ConocenosActivity extends AppCompatActivity {
         // Asignamos al RV un tipo de layout manager por defecto: típicamente el LinearLayoutManager
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
+        //Instancio un botón que nos permitirá volver al menú de inicio
         btnVolverMenu = (Button) findViewById(R.id.btnVolverMenu);
         btnVolverMenu.setOnClickListener(new View.OnClickListener() {
             @Override
