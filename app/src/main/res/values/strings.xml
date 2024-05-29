@@ -40,4 +40,11 @@
         <item name="resp_correcta">Turística</item>
     </string-array>
 
+    <string-array name="url_imagenes">
+        <item name="img0">https://gastronomia.productosdeasturias.com/wp-content/uploads/2019/10/VITICULTURA-HEROICA.jpg</item>
+        <item name="img1">https://www.alimarket.es/media/images/2023/detalle_art/369240/144956_high.jpg</item>
+        <item name="img2">https://peru.info/archivos/publicacion/72-imagen-142335852018.jpg</item>
+        <item name="img3">https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/07/pueblos-malaga-provincia.jpg</item>
+    </string-array>
+
 </resources>
