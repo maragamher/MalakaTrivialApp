@@ -34,8 +34,8 @@ public class GameViewModel extends ViewModel {
     }
 
     //Creamos la instancia del objeto de la clase Game
-    public void setData(String[] preguntas, List<String[]> respuestas){
-        this.game = new Game(preguntas, respuestas);
+    public void setData(String[] preguntas, List<String[]> respuestas, String[] url_imagenes){
+        this.game = new Game(preguntas, respuestas, url_imagenes);
     }
 
     //Returna la pregunta actual
