@@ -2,7 +2,7 @@ package com.politecnicomalaga.malakatrivialapp.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.politecnicomalaga.trivialapp.control.GameViewModel;
+import com.politecnicomalaga.malakatrivialapp.control.GameViewModel;
 
 /*Esta clase es el JSON en sí*/
 /*
