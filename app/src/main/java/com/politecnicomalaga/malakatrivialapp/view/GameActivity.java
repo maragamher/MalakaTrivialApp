@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,7 +25,7 @@ import java.util.List;
 public class GameActivity extends AppCompatActivity {
     private TextView tvPregunta, tvTiempo, tvMessage;
     private Button btnResp1, btnResp2, btnResp3, btnResp4, btnSigPreg;
-    private ImageView ivImage;
+    private WebView wvImage;
     private GameViewModel gameViewModel;
     private CountDownTimer timer;
 
@@ -48,7 +49,7 @@ public class GameActivity extends AppCompatActivity {
         btnResp3 = (Button) findViewById(R.id.btnResp3);
         btnResp4 = (Button) findViewById(R.id.btnResp4);
         btnSigPreg = (Button) findViewById(R.id.btnNextPreg);
-        ivImage = (ImageView) findViewById(R.id.ivImage);
+        wvImage = (WebView) findViewById(R.id.ivImage);
 
         tvMessage.setText(tvMessage.getText() + MainActivity.getPlayer());
 
@@ -157,6 +158,8 @@ public class GameActivity extends AppCompatActivity {
                 btnResp2.setText(Question.getListaRespuestas().get(1).getRespuesta());
                 btnResp3.setText(Question.getListaRespuestas().get(2).getRespuesta());
                 btnResp4.setText(Question.getListaRespuestas().get(3).getRespuesta());
+                String html = "<html><body><img src=\"" + Question.getUrlImage() + "\" width=\"75%\" height=\"100%\"\"/></body></html>";
+                wvImage.loadData(html, "text/html", null);
             }
 
         });
