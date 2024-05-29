@@ -12,8 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.politecnicomalaga.trivialapp.R;
-import com.politecnicomalaga.trivialapp.control.GameViewModel;
+import com.politecnicomalaga.malakatrivialapp.R;
+import com.politecnicomalaga.malakatrivialapp.control.GameViewModel;
 
 public class Results_activity extends AppCompatActivity {
     private GameViewModel gameViewModel;
