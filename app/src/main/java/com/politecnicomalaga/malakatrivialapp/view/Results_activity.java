@@ -1,4 +1,4 @@
-package com.politecnicomalaga.trivialapp.view;
+package com.politecnicomalaga.malakatrivialapp.view;
 
 import android.content.Intent;
 import android.os.Bundle;

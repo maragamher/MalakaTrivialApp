@@ -1,4 +1,4 @@
-package com.politecnicomalaga.malakatrivialapp.control;
+package com.politecnicomalaga.trivialapp.control;
 
 import android.view.View;
 import android.widget.Button;
@@ -7,8 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.politecnicomalaga.malakatrivialapp.control.GameRVAdapter;
-import com.politecnicomalaga.malakatrivialapp.R;
+import com.politecnicomalaga.trivialapp.R;
 
 public class GameViewHolder extends RecyclerView.ViewHolder {
 
