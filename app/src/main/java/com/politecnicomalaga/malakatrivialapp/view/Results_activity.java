@@ -20,6 +20,7 @@ public class Results_activity extends AppCompatActivity {
     private TextView tvResults, tvMessage;
     private Button btnMenu;
 
+    //Metodo onCreate para realizar la inicialización básica de la actividad.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +38,11 @@ public class Results_activity extends AppCompatActivity {
         tvMessage = (TextView) findViewById(R.id.tvMessage);
         btnMenu = (Button) findViewById(R.id.btnMenu);
 
+        //Muestra los puntos en el viewModel.
         int score = gameViewModel.getScore();
         tvResults.setText(String.valueOf(score));
 
+        //Muestra un mensaje según los puntos obtenidos
         if(score >= 3000){
             tvMessage.setText("¡Excelente!");
         }else if(score >= 2000){
@@ -50,6 +53,7 @@ public class Results_activity extends AppCompatActivity {
             tvMessage.setText("Tienes que mejorar");
         }
 
+        //Boton para volver al menú principal.
         btnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
