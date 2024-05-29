@@ -2,6 +2,7 @@ package com.politecnicomalaga.malakatrivialapp.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.politecnicomalaga.trivialapp.control.GameViewModel;
 
 /*Esta clase es el JSON en sí*/
 /*
@@ -16,15 +17,15 @@ public class Game {
     private int currentQuestion;
     private GameViewModel gameViewModel;
 
-    public Game(String[] preguntas, List<String[]> respuestas) {
+    public Game(String[] preguntas, List<String[]> respuestas, String[] url_imagenes) {
         currentQuestion = 0;
         listaPreguntas = new ArrayList<>();
         for(int i = 0; i < preguntas.length;i++){
-            listaPreguntas.add(new Question(preguntas[i], respuestas.get(i)));
+            listaPreguntas.add(new Question(preguntas[i], respuestas.get(i), url_imagenes[i]));
         }
         gameViewModel = GameViewModel.getInstance();
     }
-
+    
     public int getPuntosTotales() {
         return puntosTotales;
     }
