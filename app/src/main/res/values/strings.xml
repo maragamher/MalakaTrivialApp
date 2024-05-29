@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">MalakaTrivialApp</string>
+
+    <string-array name="lista_preguntas">
+        <item name="pregunta">¿Cuál fue la principal industria de Málaga durante el siglo XIX?</item>
+        <item name="pregunta">¿Qué tipo de industria se desarrolló de manera significativa en Málaga a finales del siglo XIX?</item>
+        <item name="pregunta">¿Cuál fue uno de los principales productos de exportación de la industria malagueña a principios del siglo XX?</item>
+        <item name="pregunta">¿Qué industria se consolidó en Málaga durante la dictadura franquista?</item>
+    </string-array>
+
+    <string-array name="respuestas_pregunta0">
+        <item name="respuesta">Agricultura</item>
+        <item name="respuesta">Textil</item>
+        <item name="respuesta">Vinicultura</item>
+        <item name="respuesta">Minería</item>
+        <item name="resp_correcta">Vinicultura</item>
+    </string-array>
+
+    <string-array name="respuestas_pregunta1">
+        <item name="respuesta">Conservera</item>
+        <item name="respuesta">Siderúrgica</item>
+        <item name="respuesta">Química</item>
+        <item name="respuesta">Cerámica</item>
+        <item name="resp_correcta">Conservera</item>
+    </string-array>
+
+    <string-array name="respuestas_pregunta2">
+        <item name="respuesta">Aceite de oliva</item>
+        <item name="respuesta">Muebles</item>
+        <item name="respuesta">Hierro</item>
+        <item name="respuesta">Pasas</item>
+        <item name="resp_correcta">Pasas</item>
+    </string-array>
+
+    <string-array name="respuestas_pregunta3">
+        <item name="respuesta">Energética</item>
+        <item name="respuesta">Turística</item>
+        <item name="respuesta">Automotriz</item>
+        <item name="respuesta">Metalúrgica</item>
+        <item name="resp_correcta">Turística</item>
+    </string-array>
+
 </resources>
