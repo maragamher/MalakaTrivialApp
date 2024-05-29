@@ -158,7 +158,7 @@ public class GameActivity extends AppCompatActivity {
                 btnResp2.setText(Question.getListaRespuestas().get(1).getRespuesta());
                 btnResp3.setText(Question.getListaRespuestas().get(2).getRespuesta());
                 btnResp4.setText(Question.getListaRespuestas().get(3).getRespuesta());
-                String html = "<html><body><img src=\"" + Question.getUrlImage() + "\" width=\"75%\" height=\"100%\"\"/></body></html>";
+                String html = "<html><body><img src=\"" + Question.getUrlImage() + "\" width=\"100%\" height=\"100%\"\"/></body></html>";
                 wvImage.loadData(html, "text/html", null);
             }
 
