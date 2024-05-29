@@ -17,6 +17,7 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
     public GameViewHolder(@NonNull View itemView, GameRVAdapter adapter) {
         super(itemView);
 
+        //Inicializa el textView del nombre y descripcion.
         tvNombre = itemView.findViewById(R.id.tvNombre);
         tvDescripcion = itemView.findViewById(R.id.tvDescrip);
 
