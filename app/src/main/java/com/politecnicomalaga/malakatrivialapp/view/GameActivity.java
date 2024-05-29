@@ -58,6 +58,7 @@ public class GameActivity extends AppCompatActivity {
         String[] resp_preg_1 = getResources().getStringArray(R.array.respuestas_pregunta1);
         String[] resp_preg_2 = getResources().getStringArray(R.array.respuestas_pregunta2);
         String[] resp_preg_3 = getResources().getStringArray(R.array.respuestas_pregunta3);
+        String[] url_imagenes = getResources().getStringArray(R.array.url_imagenes);
         //Los arrays de respuestas los metemos en una ArrayList para pasarselo al GameViewModel
         List<String[]> respuestas = new ArrayList<>();
         respuestas.add(resp_preg_0);
@@ -71,7 +72,7 @@ public class GameActivity extends AppCompatActivity {
         //Reiniciamos por si venimos de una partida anterior no haya datos guardados
         gameViewModel.reset();
         //Le pasamos las preguntas y respuestas
-        gameViewModel.setData(preguntas, respuestas);
+        gameViewModel.setData(preguntas, respuestas, url_imagenes);
 
         //Cargamos los datos en la pantalla
         loadData();
