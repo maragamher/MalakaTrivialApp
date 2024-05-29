@@ -1,4 +1,4 @@
-package com.politecnicomalaga.trivialapp.view;
+package com.politecnicomalaga.malakatrivialapp.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,8 +17,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.politecnicomalaga.trivialapp.R;
-import com.politecnicomalaga.trivialapp.control.GameViewModel;
+import com.politecnicomalaga.malakatrivialapp.R;
+import com.politecnicomalaga.malakatrivialapp.control.GameViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
