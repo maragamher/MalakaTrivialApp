@@ -188,6 +188,7 @@ public class GameActivity extends AppCompatActivity {
             public void onFinish() {
                 //Cuando se termine el tiempo ponemos como si la pregunta hubiera sido contestada,
                 //aunque realmente no la contesten, así no se podrá contestar fuera de tiempo
+                gameViewModel.submitAnswer("");
                 gameViewModel.setQuestionAnswered(true);
             }
         };
