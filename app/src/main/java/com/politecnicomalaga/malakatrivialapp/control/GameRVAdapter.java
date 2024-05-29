@@ -12,7 +12,7 @@ import com.politecnicomalaga.malakatrivialapp.R;
 
 import java.util.List;
 
-public class GameRVAdapter extends RecyclerView.Adapter<com.politecnicomalaga.trivialapp.control.GameViewHolder> {
+public class GameRVAdapter extends RecyclerView.Adapter<GameViewHolder> {
     private LayoutInflater inflater;
     private List<String[]> nosotros;
 
@@ -23,14 +23,14 @@ public class GameRVAdapter extends RecyclerView.Adapter<com.politecnicomalaga.tr
 
     @NonNull
     @Override
-    public com.politecnicomalaga.trivialapp.control.GameViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public GameViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View viewItem = inflater.inflate(R.layout.rv_main, parent, false);
 
-        return new com.politecnicomalaga.trivialapp.control.GameViewHolder(viewItem, this);
+        return new GameViewHolder(viewItem, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull com.politecnicomalaga.trivialapp.control.GameViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull GameViewHolder holder, int position) {
         String[] persona = this.nosotros.get(position);
 
         holder.getTvNombre().setText(persona[0]);

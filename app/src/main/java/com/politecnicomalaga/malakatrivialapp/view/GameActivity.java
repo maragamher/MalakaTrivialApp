@@ -122,7 +122,7 @@ public class GameActivity extends AppCompatActivity {
                     resetButtonColor();
                 } else {
                     //Si el juego ha terminado, es decir no hay más preguntas, cambiamos a la pantalla de resultados
-                    Intent intent = new Intent(GameActivity.this, com.politecnicomalaga.trivialapp.view.Results_activity.class);
+                    Intent intent = new Intent(GameActivity.this, Results_activity.class);
                     startActivity(intent);
                 }
 
