@@ -40,7 +40,7 @@ public class ConocenosActivity extends AppCompatActivity {
         String[] mara = {"MARA GAMBERO","Recién salida de la cantera malagueña tenemos a una auténtica lider la cual puede con todo."};
         String[] alvaro = {"ÁLVARO MILLÁN","Chaval muy joven que siempre está trabajando y avanzando en su desarrollo profesional."};
         String[] daniel = {"DANIEL SÁNCHEZ","Aquí nos encontramos con la veterania del grupo (que no viejo), aporta una experiencia muy valiosa."};
-        String[] sergio = {"SERGIO SORIANO",""};
+        String[] sergio = {"SERGIO SORIANO","Joven experimentado en el ámbito de la programación y siempre dispuesto a ayudar"};
 
         //Creo el ArrayList
         nosotros = new ArrayList<>();
