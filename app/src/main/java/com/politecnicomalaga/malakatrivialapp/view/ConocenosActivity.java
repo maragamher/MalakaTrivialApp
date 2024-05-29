@@ -1,4 +1,4 @@
-package com.politecnicomalaga.trivialapp.view;
+package com.politecnicomalaga.malakatrivialapp.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.politecnicomalaga.trivialapp.R;
-import com.politecnicomalaga.trivialapp.control.GameRVAdapter;
+import com.politecnicomalaga.malakatrivialapp.R;
+import com.politecnicomalaga.malakatrivialapp.control.GameRVAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
